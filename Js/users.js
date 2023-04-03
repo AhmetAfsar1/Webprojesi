@@ -1,4 +1,4 @@
-// Veriseti
+
 let input=document.querySelector("#input");
 let button=document.querySelector("#btn");
 let button2=document.querySelector("#btn2");
@@ -10,6 +10,8 @@ let list3=document.querySelector("#list3");
 let title=document.querySelector("#title3");
 let fotograf=document.querySelector("#Fotograf");
 let Kullanicikontrol=false;
+
+// Veriseti
 var users = [
     {
         name: "Atakan Adalı",
@@ -50,18 +52,17 @@ function Yaz()
           } 
         else(!Kullanicikontrol)
         {
-            title.textContent="Girdiğiniz isimde bir Developer bulunamadı ";
+            title.textContent="Girdiğiniz isimde bir Developer bulunamadı ";  
             Developername.textContent="";
             desc.textContent="";
             fotograf.src="";
             list1.textContent="";
             list2.textContent="";
             list3.textContent="";
-          
+           
         }
-        
      }
-     input.value="";
+    input.value="";
 } 
 function sıfırla()
 {
@@ -72,7 +73,10 @@ function sıfırla()
             list1.textContent="";
             list2.textContent="";
             list3.textContent="";
+            title.textContent=" ";
 }
 button2.addEventListener("click", sıfırla)
 button.addEventListener("click", Yaz);
+
+
 
