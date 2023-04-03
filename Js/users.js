@@ -48,14 +48,20 @@ function Yaz()
              Kullanicikontrol=true;
              break;
           } 
-        if(!Kullanicikontrol)
+        else(!Kullanicikontrol)
         {
             title.textContent="Girdiğiniz isimde bir Developer bulunamadı ";
+            Developername.textContent="";
+            desc.textContent="";
+            fotograf.src="";
+            list1.textContent="";
+            list2.textContent="";
+            list3.textContent="";
           
         }
         
      }
-    
+     input.value="";
 } 
 function sıfırla()
 {
